@@ -11,6 +11,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 
 import { FormsModule } from '@angular/forms';
+import { CabeceraNavPerfilComponent } from './cabecera-nav-perfil/cabecera-nav-perfil.component';
+import { PublicarHistorietaComponent } from './publicar-historieta/publicar-historieta.component';
+import { HistorietasListComponent } from './historietas-list/historietas-list.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 
 @NgModule({
@@ -20,7 +24,11 @@ import { FormsModule } from '@angular/forms';
     MisCosasComponent,
     MisColegasComponent,
     EventosComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CabeceraNavPerfilComponent,
+    PublicarHistorietaComponent,
+    HistorietasListComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule,
