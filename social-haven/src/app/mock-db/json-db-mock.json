@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Luis",
+      "surname": "Pedraza",
+      "birthName": "22-22-2222",
+      "startDate": "22-23-2223",
+      "user": "LuisKD",
+      "pass": "contraseñaSegura"
+    },
+    {
+      "id": 1,
+      "name": "Carlos",
+      "surname": "C",
+      "birthName": "22-22-2222",
+      "startDate": "22-23-2223",
+      "user": "CarlosKD",
+      "pass": "contraseñaMuySegura"
+    },
+    {
+      "id": 2,
+      "name": "Víctor",
+      "surname": "V",
+      "birthName": "22-22-2222",
+      "startDate": "22-23-2223",
+      "user": "VictorKD",
+      "pass": "contraseñaMuyMuySegura"
+    },
+    {
+      "name": "Ismael",
+      "surname": "I",
+      "birthName": "22-22-2222",
+      "startDate": "22-23-2223",
+      "user": "IsmaelKD",
+      "pass": "contraseñaNoTanSegura",
+      "id": 3
+    }
+  ],
+
+
+
+  "messages": [
+    {
+      "id": 0,
+      "content": "Mensaje de Luis",
+      "publishDate": "22-23-2223",
+      "userId": 0
+    },
+    {
+      "id": 1,
+      "content": "Mensaje de Carlos",
+      "publishDate": "22-23-2223",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "content": "Mensaje de Víctor",
+      "publishDate": "22-23-2223",
+      "userId": 2
+    }
+  ],
+
+
+
+  "reaction": [
+    {
+      "id": 0,
+      "userId": 1,
+      "idMessage": 0,
+      "reactionType": 0
+    },
+    {
+      "id": 1,
+      "userId": 2,
+      "idMessage": 1,
+      "reactionType": 1
+    },
+    {
+      "id": 2,
+      "userId": 0,
+      "idMessage": 2,
+      "reactionType": 2
+    }
+  ],
+
+
+
+  "relationship": [
+    {
+      "id": 0,
+      "userIdFrom": 0,
+      "userIdTo": 1,
+      "state": 0
+    },
+    {
+      "id": 1,
+      "userIdFrom": 1,
+      "userIdTo": 0,
+      "state": 0
+    },
+    {
+      "id": 2,
+      "userIdFrom": 0,
+      "userIdTo": 2,
+      "state": 0
+    },
+    {
+      "id": 3,
+      "userIdFrom": 2,
+      "userIdTo": 0,
+      "state": 0
+    }
+  ],
+
+
+
+  "events": [
+    {
+      "id": 0,
+      "name": "Carnaval",
+      "description": "La gente se disfraza de cosas",
+      "eventDate": "11-11-11",
+      "userId": 0
+    },
+    {
+      "id": 1,
+      "name": "Cuarto oscuro",
+      "description": "La gente sale sin poder sentarse",
+      "eventDate": "11-11-11",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "name": "AAA",
+      "description": "BBBB",
+      "eventDate": "11-11-11",
+      "userId": 1
+    }
+  ],
+
+
+
+  "assist": [
+    {
+      "id": 0,
+      "userId": 1,
+      "idEvent": 0,
+      "state": 0
+    },
+    {
+      "id": 1,
+      "userId": 2,
+      "idEvent": 0,
+      "state": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "idEvent": 1,
+      "state": 2
+    }
+  ]
+}

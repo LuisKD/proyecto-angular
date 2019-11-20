@@ -17,6 +17,9 @@ import { HistorietasListComponent } from './historietas-list/historietas-list.co
 import { CopyrightComponent } from './copyright/copyright.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { DatosPersonalesComponent } from './datos-personales/datos-personales.component';
+import { MisColeguillasComponent } from './mis-coleguillas/mis-coleguillas.component';
+import { UserLoggedComponent } from './cabecera-nav-perfil/user-logged/user-logged.component';
 
 
 
@@ -31,7 +34,10 @@ import { HttpClientModule } from '@angular/common/http';
     CabeceraNavPerfilComponent,
     PublicarHistorietaComponent,
     HistorietasListComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    DatosPersonalesComponent,
+    MisColeguillasComponent,
+    UserLoggedComponent
   ],
   imports: [
     BrowserModule,
