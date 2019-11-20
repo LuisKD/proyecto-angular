@@ -7,7 +7,7 @@
 
 nav {
     height: auto;
-    width: 50%;
+    width: 50vw;
 
     display: flex;
     flex-direction: row;
@@ -34,19 +34,47 @@ a {
     color: black;
 }
 
+main {
+    height: auto;
+    width: 50vw;
 
+    padding-bottom: 150px;
+}
 
 main > section {
-    height: auto;
-    width: 50%;
+    height: 300px;
+    width: 50vw;
 
     display: flex;
     flex-direction: row;
+
     align-items: space-between;
+
     border: 1px solid black;
 }
 
+
 #logo {
-    height: auto;
+    height: 40px;
     width: 40px;
+}
+
+#marcoPerfil {
+    width: 268px;
+    height: 280px;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+
+    bottom: -50px;
+
+    border: 2px solid red;
+}
+
+#imgperfil {
+
+  height: 100%;
+  width: 100%;
 }
