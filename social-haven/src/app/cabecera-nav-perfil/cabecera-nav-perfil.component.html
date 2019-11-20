@@ -1,15 +1,23 @@
-<nav>
-    <img src="src/app/assets/logo.jpg">
-    <button (click)="irAMisHistorietas()">Mis Historietas</button>
+<div id="cuerpoCabecera">
+
+  <nav>
+    
+    <section><a routerLink="/mis-historietas">Mis Historietas</a></section>
+    <section><a routerLink="/mis-cosas">Mis Cosas</a></section>
+    <section><a routerLink="/mis-colegas">Mis Colegas</a></section>
+    <section><a routerLink="/eventos">Eventos</a></section>
+    <!-- <button (click)="irAMisHistorietas()">Mis Historietas</button>
     <button (click)="irAMisCosas()">Mis Cosas</button>
     <button (click)="irAMisColegas()">Mis Colegas</button>
-    <button (click)="Eventos()">Eventos</button>
+    <button (click)="Eventos()">Eventos</button> -->
   </nav>
   <main>
     <section>
-      <img src="src/app/assets/imagen_perfil.jpg">
+      <img id="logo" src="../assets/images_cabecera/logo.png">
+      <img src="../assets/images_cabecera/perfil.png">
       <article>
-          <span></span>
+        <span>Perfil Luis</span>
       </article>
     </section>
   </main>
+</div>
