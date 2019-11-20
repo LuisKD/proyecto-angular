@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { User } from '../domain/user.model';
+import { UserLoggedService } from './user-logged.service';
 
 @Component({
   selector: 'app-cabecera-nav-perfil',
@@ -8,7 +10,9 @@ import { Router } from '@angular/router';
 })
 export class CabeceraNavPerfilComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  user: User;
+
+  constructor(private service: UserLoggedService, private router: Router, private route: ActivatedRoute) { }
 
   irAMisHistorietas() {
     this.router.navigate(['/mis-historietas']);
@@ -26,7 +30,24 @@ export class CabeceraNavPerfilComponent implements OnInit {
     this.router.navigate(['/eventos']);
   }
 
+  //GET
+  loadUserById() {
+  this.route.params.subscribe(params => {
+    const id = params.id as string;
+    if (id != null) {
+
+      this.service.getUserById(id)
+      .subscribe( (data: User) => this.user = data, //ok
+                  error => console.error(error),          //error
+                  () => console.log('El usuario ha cargado') //final (por defecto)
+      )
+
+    }
+  });
+  };
+
   ngOnInit() {
+    this.loadUserById();
   }
 
 }

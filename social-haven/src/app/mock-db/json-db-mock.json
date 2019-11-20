@@ -1,10 +1,10 @@
 {
-  "users": [
+  "user": [
     {
       "id": 0,
       "name": "Luis",
       "surname": "Pedraza",
-      "birthName": "22-22-2222",
+      "birthDate": "22-22-2222",
       "startDate": "22-23-2223",
       "user": "LuisKD",
       "pass": "contraseñaSegura"
@@ -13,7 +13,7 @@
       "id": 1,
       "name": "Carlos",
       "surname": "C",
-      "birthName": "22-22-2222",
+      "birthDate": "22-22-2222",
       "startDate": "22-23-2223",
       "user": "CarlosKD",
       "pass": "contraseñaMuySegura"
@@ -22,7 +22,7 @@
       "id": 2,
       "name": "Víctor",
       "surname": "V",
-      "birthName": "22-22-2222",
+      "birthDate": "22-22-2222",
       "startDate": "22-23-2223",
       "user": "VictorKD",
       "pass": "contraseñaMuyMuySegura"
@@ -30,7 +30,7 @@
     {
       "name": "Ismael",
       "surname": "I",
-      "birthName": "22-22-2222",
+      "birthDate": "22-22-2222",
       "startDate": "22-23-2223",
       "user": "IsmaelKD",
       "pass": "contraseñaNoTanSegura",
@@ -45,19 +45,19 @@
       "id": 0,
       "content": "Mensaje de Luis",
       "publishDate": "22-23-2223",
-      "userId": 0
+      "usersId": 0
     },
     {
       "id": 1,
       "content": "Mensaje de Carlos",
       "publishDate": "22-23-2223",
-      "userId": 1
+      "usersId": 1
     },
     {
       "id": 2,
       "content": "Mensaje de Víctor",
       "publishDate": "22-23-2223",
-      "userId": 2
+      "usersId": 2
     }
   ],
 

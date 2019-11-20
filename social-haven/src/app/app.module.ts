@@ -19,7 +19,7 @@ import { CopyrightComponent } from './copyright/copyright.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DatosPersonalesComponent } from './datos-personales/datos-personales.component';
 import { MisColeguillasComponent } from './mis-coleguillas/mis-coleguillas.component';
-import { UserLoggedComponent } from './cabecera-nav-perfil/user-logged/user-logged.component';
+import { UserLoggedService } from './cabecera-nav-perfil/user-logged.service';
 
 
 
@@ -37,7 +37,6 @@ import { UserLoggedComponent } from './cabecera-nav-perfil/user-logged/user-logg
     CopyrightComponent,
     DatosPersonalesComponent,
     MisColeguillasComponent,
-    UserLoggedComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +45,7 @@ import { UserLoggedComponent } from './cabecera-nav-perfil/user-logged/user-logg
     HttpClientModule,
     routing
   ],
-  providers: [],
+  providers: [UserLoggedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
