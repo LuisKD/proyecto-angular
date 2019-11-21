@@ -4,8 +4,8 @@
     </nav>
     <main>
         <section id="marcoHistorietasList">
-            <article>
-            
+            <article *ngFor="let message of messagesList">
+                    <app-historieta [message]="message"></app-historieta>
             </article>
         </section>
     </main>

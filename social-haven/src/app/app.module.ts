@@ -20,6 +20,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { DatosPersonalesComponent } from './datos-personales/datos-personales.component';
 import { MisColeguillasComponent } from './mis-coleguillas/mis-coleguillas.component';
 import { UserLoggedService } from './cabecera-nav-perfil/user-logged.service';
+import { HistorietaComponent } from './historietas-list/historieta/historieta.component';
+import { HistorietasListService } from './historietas-list/historietas-list.service';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsersService } from './usuarios/users.service';
 
 
 
@@ -37,6 +41,8 @@ import { UserLoggedService } from './cabecera-nav-perfil/user-logged.service';
     CopyrightComponent,
     DatosPersonalesComponent,
     MisColeguillasComponent,
+    HistorietaComponent,
+    UsuariosComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +51,7 @@ import { UserLoggedService } from './cabecera-nav-perfil/user-logged.service';
     HttpClientModule,
     routing
   ],
-  providers: [UserLoggedService],
+  providers: [UserLoggedService, HistorietasListService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

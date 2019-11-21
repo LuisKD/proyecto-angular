@@ -19,6 +19,12 @@ export class UserLoggedService {
     constructor(private http: HttpClient) { }
 
     //GET
+    getUsersList() {
+        return this.http.get(URL_BASE);
+    }
+
+
+    //GET
     getUserById() {
         return this.http.get(`${URL_BASE}`);
     }
