@@ -19,8 +19,8 @@ export class UserLoggedService {
     constructor(private http: HttpClient) { }
 
     //GET
-    getUserById(id: string) {
-        return this.http.get(`${URL_BASE}/${id}`);
+    getUserById() {
+        return this.http.get(`${URL_BASE}`);
     }
     
 }

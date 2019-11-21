@@ -10,10 +10,9 @@
   </nav>
   <main>
     <section>
-      <!-- <img id="logo" src="../assets/images_cabecera/logo.png"> -->
-      <div id="marcoPerfil"><img id="imgPerfil" src="../assets/images_cabecera/userprofile1.png"></div>
+      <div id="marcoPerfil"><img id="imgPerfil" src="../assets/images_cabecera/{{user?.image}}"></div>
       <article>
-        <span style="font-size: 5em;"> Nombre: {{ user?.name }} </span>
+        <span style="font-size: 4em;"> {{ user?.name }} {{ user?.surname }} </span>
       </article>
     </section>
   </main>

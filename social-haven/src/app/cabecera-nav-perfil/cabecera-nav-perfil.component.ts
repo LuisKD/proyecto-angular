@@ -32,18 +32,11 @@ export class CabeceraNavPerfilComponent implements OnInit {
 
   //GET
   loadUserById() {
-  this.route.params.subscribe(params => {
-    const id = params.id as string;
-    if (id != null) {
-
-      this.service.getUserById(id)
+      this.service.getUserById()
       .subscribe( (data: User) => this.user = data, //ok
                   error => console.error(error),          //error
                   () => console.log('El usuario ha cargado') //final (por defecto)
       )
-
-    }
-  });
   };
 
   ngOnInit() {
