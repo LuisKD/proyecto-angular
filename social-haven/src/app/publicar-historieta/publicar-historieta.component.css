@@ -7,24 +7,30 @@
 
 main {
     height: auto;
-    width: 50vw;
+    width: 65vw;
 
     padding-bottom: 150px;
 }
 
 #marcoHistorietasPublicadas {
     height: 300px;
-    width: 50vw;
+    width: 65vw;
 
     display: flex;
     flex-direction: row;
 
     align-items: space-between;
 
-    border: 1px solid black;
+    border: 5px solid #DD7B16;
+	border-radius: 30px;
+    background: linear-gradient(to bottom, rgb(231, 180, 129), #FFFFFF);
+    box-shadow: 10px 10px 20px black;
 }
 
 #tituloPublicarHistorieta {
     height: auto;
-    width: 50vw;
+    width: 65vw;
+
+    font-size: 1.4em;
+    /* color: #DD7B16; */
 }

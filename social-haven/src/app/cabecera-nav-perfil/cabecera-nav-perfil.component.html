@@ -1,5 +1,8 @@
 <div id="cuerpoCabecera">
-  <nav>
+  <header id="banner">
+    <img src="../../assets/images_cabecera/logo.png" alt="SocialHaven" id="logo">
+  </header>
+  <nav id="barraNavegacion">
     <section><a routerLink="/mis-historietas">Mis Historietas</a></section>
     <section><a routerLink="/mis-cosas">Mis Cosas</a></section>
     <section><a routerLink="/mis-colegas">Mis Colegas</a></section>
@@ -10,7 +13,7 @@
       <!-- <img id="logo" src="../assets/images_cabecera/logo.png"> -->
       <div id="marcoPerfil"><img id="imgPerfil" src="../assets/images_cabecera/userprofile1.png"></div>
       <article>
-        <span style="font-size: 5em;"> Hola: {{ user?.name }} </span>
+        <span style="font-size: 5em;"> Nombre: {{ user?.name }} </span>
       </article>
     </section>
   </main>
