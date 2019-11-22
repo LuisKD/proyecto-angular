@@ -1,8 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Messages } from 'src/app/domain/messages.model';
 import { User } from 'src/app/domain/user.model';
 import { HistorietasListService } from '../historietas-list.service';
-import { UserLoggedService } from 'src/app/cabecera-nav-perfil/user-logged.service';
 import { UsersService } from 'src/app/usuarios/users.service';
 
 @Component({
@@ -15,22 +14,23 @@ export class HistorietaComponent implements OnInit {
   @Input() message: Messages;
   @Input() user: User;
 
+  messagesList: Messages[];
+
   //??
   // messagesList: Messages[];
               //Herre
-  constructor(private userService: UsersService) { }
+  constructor(private userService: UsersService, private historietaService: HistorietasListService) { }
 
-//
-//GET
-/*
-getMessageList() {
-  this.serviceHistorietas.getMessageList()
+
+  //GET
+  getMessageList() {
+  this.historietaService.getMessageList()
   .subscribe( (data: Messages[]) => this.messagesList = data, //ok
               error => console.error(error),          //error
               () => console.log('Item list ha cargado') //final (por defecto)
   )
   };
-  */
+  
 
 
   ngOnInit() {
@@ -38,10 +38,7 @@ getMessageList() {
     // this.userService.getUserById(this.message.usersId).subscribe(
     //   (data: User) => this.user = data
     // )
-
-
-
-    // this.getMessageList();
+    this.getMessageList();
   }
 
 }

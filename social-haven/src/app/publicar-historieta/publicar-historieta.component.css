@@ -5,11 +5,12 @@
     align-items: center;
 }
 
-main {
+#tituloPublicarHistorieta {
     height: auto;
     width: 65vw;
 
-    padding-bottom: 150px;
+    font-size: 1.4em;
+    /* color: #DD7B16; */
 }
 
 #marcoHistorietasPublicadas {
@@ -18,8 +19,8 @@ main {
 
     display: flex;
     flex-direction: row;
-
-    align-items: space-between;
+    justify-content: center;
+    align-items: center;
 
     border: 5px solid #DD7B16;
 	border-radius: 30px;
@@ -27,10 +28,8 @@ main {
     box-shadow: 10px 10px 20px black;
 }
 
-#tituloPublicarHistorieta {
-    height: auto;
-    width: 65vw;
-
-    font-size: 1.4em;
-    /* color: #DD7B16; */
+#marcoHistorietasPublicadas article {
+    height: 70%;
+    width: 70%;
 }
+

@@ -5,8 +5,9 @@
     <main>
         <section id="marcoHistorietasPublicadas">
           <article>
-            
+                <textarea [(ngModel)]="newMessage" rows="12" cols="90"></textarea>
           </article>
+          <button (click)="sendMessage()">Enviar</button>
         </section>
     </main>
 </nav>

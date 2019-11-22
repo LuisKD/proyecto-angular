@@ -12,6 +12,8 @@ import { User } from '../domain/user.model';
 })
 export class HistorietasListComponent implements OnInit {
 
+  message: Messages;
+
   messagesList: Messages[];
 
   users: User;
@@ -26,12 +28,6 @@ export class HistorietasListComponent implements OnInit {
               () => console.log('messagesList ha cargado') //final (por defecto)
   )
   };
-
-  //POST
-  addMessage(message: Messages) {
-  this.serviceHistorietas.addMessage(message)
-    .subscribe(message => this.messagesList.push(message));
-  }
 
   ngOnInit() {
     this.getMessageList();

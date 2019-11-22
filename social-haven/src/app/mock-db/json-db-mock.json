@@ -41,9 +41,6 @@
       "image": "userprofile4.png"
     }
   ],
-
-
-
   "messages": [
     {
       "id": 1,
@@ -64,9 +61,6 @@
       "usersId": 3
     }
   ],
-
-
-
   "reaction": [
     {
       "id": 1,
@@ -87,9 +81,6 @@
       "reactionType": 2
     }
   ],
-
-
-
   "relationship": [
     {
       "id": 1,
@@ -116,9 +107,6 @@
       "state": 0
     }
   ],
-
-
-
   "events": [
     {
       "id": 1,
@@ -142,9 +130,6 @@
       "userId": 1
     }
   ],
-
-
-
   "assist": [
     {
       "id": 1,

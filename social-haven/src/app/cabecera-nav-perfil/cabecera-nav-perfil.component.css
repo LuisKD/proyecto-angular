@@ -118,9 +118,7 @@ main > section {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin: 0;
-
-    bottom: -50px;
+    margin: 10px;
 
     border: 2px solid red;
 }
