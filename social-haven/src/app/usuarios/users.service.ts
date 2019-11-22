@@ -4,7 +4,7 @@ import { analyzeAndValidateNgModules } from '@angular/compiler';
 import { Observable } from 'rxjs';
 import { User } from '../domain/user.model';
 
-const URL_BASE = 'http://localhost:3000/item-list';
+const URL_BASE = 'http://localhost:3000/user';
 
 //POST, PUT
 const httpOptions = {

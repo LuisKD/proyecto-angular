@@ -112,9 +112,9 @@ main > section {
 
 
 #marcoPerfil {
-    width: auto;
     height: auto;
-
+    width: auto;
+    
     position: relative;
     display: inline-block;
     overflow: hidden;

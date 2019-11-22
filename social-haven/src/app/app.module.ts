@@ -22,7 +22,6 @@ import { MisColeguillasComponent } from './mis-coleguillas/mis-coleguillas.compo
 import { UserLoggedService } from './cabecera-nav-perfil/user-logged.service';
 import { HistorietaComponent } from './historietas-list/historieta/historieta.component';
 import { HistorietasListService } from './historietas-list/historietas-list.service';
-import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsersService } from './usuarios/users.service';
 
 
@@ -42,7 +41,6 @@ import { UsersService } from './usuarios/users.service';
     DatosPersonalesComponent,
     MisColeguillasComponent,
     HistorietaComponent,
-    UsuariosComponent,
   ],
   imports: [
     BrowserModule,

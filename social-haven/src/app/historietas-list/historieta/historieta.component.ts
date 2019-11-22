@@ -13,16 +13,16 @@ import { UsersService } from 'src/app/usuarios/users.service';
 export class HistorietaComponent implements OnInit {
 
   @Input() message: Messages;
-
-  user: User;
+  @Input() user: User;
 
   //??
-  messagesList: Messages[];
+  // messagesList: Messages[];
               //Herre
-  constructor(private userService: UsersService, private serviceHistorietas: HistorietasListService) { }
+  constructor(private userService: UsersService) { }
 
 //
 //GET
+/*
 getMessageList() {
   this.serviceHistorietas.getMessageList()
   .subscribe( (data: Messages[]) => this.messagesList = data, //ok
@@ -30,6 +30,7 @@ getMessageList() {
               () => console.log('Item list ha cargado') //final (por defecto)
   )
   };
+  */
 
 
   ngOnInit() {
@@ -38,8 +39,9 @@ getMessageList() {
     //   (data: User) => this.user = data
     // )
 
-    this.getMessageList();
 
+
+    // this.getMessageList();
   }
 
 }

@@ -1,15 +1,11 @@
-<section id="historietaID" class="historieta" [class.selected]="historieta.selected" (mouseover)="item.selected=true" (mouseout)="item.selected=false">
-        <!-- id: number;
-        content: string;
-        publishDate: string;
-        usersId: number; -->
+<section id="historietaID">
     <article>
-        <span>ID: {{ message?.usersId }}</span>
-        <span>Fecha: {{ message?.publishDate }}</span>
+        <span>ID: {{ messages?.usersId }}</span>
+        <span>Fecha: {{ messages?.publishDate }}</span>
     </article>
     <article>
           <img>
-          <section>Mensaje: {{message?.content}}</section>
+          <section>Mensaje: {{messages?.content}}</section>
     </article>
     <article>
             <!-- <button (click)="volverAMain()">Volver</button> -->

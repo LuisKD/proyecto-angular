@@ -14,7 +14,7 @@ export class HistorietasListComponent implements OnInit {
 
   messagesList: Messages[];
 
-  users: User[];
+  users: User;
 
   constructor(private serviceHistorietas: HistorietasListService, private serviceUser: UserLoggedService) { }
 
@@ -23,10 +23,9 @@ export class HistorietasListComponent implements OnInit {
   this.serviceHistorietas.getMessageList()
   .subscribe( (data: Messages[]) => this.messagesList = data, //ok
               error => console.error(error),          //error
-              () => console.log('Item list ha cargado') //final (por defecto)
+              () => console.log('messagesList ha cargado') //final (por defecto)
   )
   };
-
 
   //POST
   addMessage(message: Messages) {

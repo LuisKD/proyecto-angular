@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Messages } from '../domain/messages.model';
 import { Observable } from 'rxjs';
 
-const URL_BASE = 'http://localhost:3000/historietas-list';
+const URL_BASE = 'http://localhost:3000/messages';
 
 const httpOptions = {
     headers: new HttpHeaders({
