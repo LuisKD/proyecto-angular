@@ -16,7 +16,7 @@ export class HistorietasListComponent implements OnInit {
 
   messagesList: Messages[];
 
-  users: User;
+  //users: User;
 
   constructor(private serviceHistorietas: HistorietasListService, private serviceUser: UserLoggedService) { }
 

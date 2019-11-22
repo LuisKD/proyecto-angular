@@ -8,9 +8,6 @@ import { EventosComponent } from './eventos/eventos.component';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 
 
-import { HistorietaComponent } from './historietas-list/historieta/historieta.component'; //QUITAR
-
-
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'}, // Equivale a: {path: '', component: ItemComponent} --> http://localhost:4200/
   {path: 'home', component: MisHistorietasComponent}, // http://localhost:4200/home
@@ -18,7 +15,6 @@ const routes: Routes = [
   {path: 'mis-cosas', component: MisCosasComponent},
   {path: 'mis-colegas', component: MisColegasComponent},
   {path: 'eventos', component: EventosComponent},
-  {path: 'historieta', component: HistorietaComponent}, //QUITAR
   {path: '**', component: PageNotFoundComponent}
 ];
 

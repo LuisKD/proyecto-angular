@@ -17,12 +17,13 @@ import { HistorietasListComponent } from './historietas-list/historietas-list.co
 import { CopyrightComponent } from './copyright/copyright.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { DatosPersonalesComponent } from './datos-personales/datos-personales.component';
 import { MisColeguillasComponent } from './mis-coleguillas/mis-coleguillas.component';
 import { UserLoggedService } from './cabecera-nav-perfil/user-logged.service';
 import { HistorietaComponent } from './historietas-list/historieta/historieta.component';
 import { HistorietasListService } from './historietas-list/historietas-list.service';
 import { UsersService } from './usuarios/users.service';
+import { SoloMisHistorietasComponent } from './mis-cosas/solo-mis-historietas/solo-mis-historietas.component';
+import { DatosPersonalesComponent } from './mis-cosas/datos-personales/datos-personales.component';
 
 
 
@@ -41,6 +42,7 @@ import { UsersService } from './usuarios/users.service';
     DatosPersonalesComponent,
     MisColeguillasComponent,
     HistorietaComponent,
+    SoloMisHistorietasComponent,
   ],
   imports: [
     BrowserModule,

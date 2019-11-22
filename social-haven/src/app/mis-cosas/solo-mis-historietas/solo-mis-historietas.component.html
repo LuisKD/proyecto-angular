@@ -1,0 +1,12 @@
+<nav id="cuerpoSoloHistorietasList">
+    <nav id="tituloMisHistorietas">
+        <h2>Mis historietas:</h2>
+    </nav>
+    <main>
+        <section id="marcoHistorietas">
+            <article *ngFor="let message of messagesList">
+                    <app-historieta [message]="message"></app-historieta>
+            </article>
+        </section>
+    </main>
+</nav>
