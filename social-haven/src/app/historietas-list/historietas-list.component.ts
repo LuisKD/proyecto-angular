@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Messages } from '../domain/messages.model';
 import { UserLoggedService } from '../cabecera-nav-perfil/user-logged.service';
 import { Router, ActivatedRoute } from '@angular/router';
