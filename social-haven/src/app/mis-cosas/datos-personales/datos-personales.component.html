@@ -2,7 +2,12 @@
     <main>
         <section id="marcoHistorietasPublicadas">
           <article>
-               
+            <h2>Mis Datos Personales:</h2>
+            <span><b>Usuario:</b> {{ user?.user }}</span>
+            <span><b>Nombre:</b> {{ user?.name }}</span>
+            <span><b>Apellido:</b> {{ user?.surname }}</span>
+            <span><b>Fecha de nacimiento:</b> {{ user?.birthDate }}</span>
+            <span><b>Fecha de registro:</b> {{ user?.startDate }}</span>
           </article>
         </section>
     </main>

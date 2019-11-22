@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+
+
 #marcoHistorietasPublicadas {
     height: 300px;
     width: 65vw;
@@ -18,4 +20,16 @@
 	border-radius: 30px;
     background: linear-gradient(to bottom, rgb(231, 180, 129), #FFFFFF);
     box-shadow: 10px 10px 20px black;
+}
+
+article {
+    height: 300px;
+    width: 65vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-left: 30px;
+    padding-bottom: 20px;
 }

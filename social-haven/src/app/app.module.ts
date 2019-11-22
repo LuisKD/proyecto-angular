@@ -24,6 +24,9 @@ import { HistorietasListService } from './historietas-list/historietas-list.serv
 import { UsersService } from './usuarios/users.service';
 import { SoloMisHistorietasComponent } from './mis-cosas/solo-mis-historietas/solo-mis-historietas.component';
 import { DatosPersonalesComponent } from './mis-cosas/datos-personales/datos-personales.component';
+import { BarraBusquedaComponent } from './mis-colegas/barra-busqueda/barra-busqueda.component';
+import { InfoColeguillaComponent } from './mis-colegas/info-coleguilla/info-coleguilla.component';
+import { InfoNoColeguillaComponent } from './mis-colegas/info-no-coleguilla/info-no-coleguilla.component';
 
 
 
@@ -43,6 +46,9 @@ import { DatosPersonalesComponent } from './mis-cosas/datos-personales/datos-per
     MisColeguillasComponent,
     HistorietaComponent,
     SoloMisHistorietasComponent,
+    BarraBusquedaComponent,
+    InfoColeguillaComponent,
+    InfoNoColeguillaComponent,
   ],
   imports: [
     BrowserModule,
