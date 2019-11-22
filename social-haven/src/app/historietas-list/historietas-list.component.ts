@@ -1,9 +1,7 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Messages } from '../domain/messages.model';
 import { UserLoggedService } from '../cabecera-nav-perfil/user-logged.service';
-import { Router, ActivatedRoute } from '@angular/router';
 import { HistorietasListService } from './historietas-list.service';
-import { User } from '../domain/user.model';
 
 @Component({
   selector: 'app-historietas-list',
@@ -12,25 +10,11 @@ import { User } from '../domain/user.model';
 })
 export class HistorietasListComponent implements OnInit {
 
-  message: Messages;
+  @Input() messagesList: Messages[];
 
-  messagesList: Messages[];
-
-  //users: User;
-
-  constructor(private serviceHistorietas: HistorietasListService, private serviceUser: UserLoggedService) { }
-
-  //GET
-  getMessageList() {
-  this.serviceHistorietas.getMessageList()
-  .subscribe( (data: Messages[]) => this.messagesList = data, //ok
-              error => console.error(error),          //error
-              () => console.log('messagesList ha cargado') //final (por defecto)
-  )
-  };
+  constructor() { }
 
   ngOnInit() {
-    this.getMessageList();
   }
 
 }
